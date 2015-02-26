@@ -38,7 +38,8 @@ func (s *Stopwatch) String() string {
 }
 
 func (s *Stopwatch) Start() {
-	// Manually set the start time
+	// Manually set the start time and reset the duration
+	s.elapsed = 0
 	s.start = time.Now()
 }
 
