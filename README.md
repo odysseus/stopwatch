@@ -18,7 +18,7 @@ func main() {
 	time.Sleep(500 * time.Millisecond)
 
 	// If Stop() has not been called manually, it is called as soon as
-	// you try to use a method that needs an elapsed time
+	// you try to use a method that needs an elapsed time, including String()
 	fmt.Println(sw)
 	// 0h 0m 0s 502.435ms
 
